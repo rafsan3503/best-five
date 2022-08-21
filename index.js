@@ -13,23 +13,13 @@ for (const button of buttons) {
         
         const orderList = document.getElementById('player-list');
 
+        // create li by js 
         const li = document.createElement('li');
         li.innerText = playerName;
         li.setAttribute('class', 'mt-3');
+        li.setAttribute('class', 'p-3');
         li.style.background = 'linear-gradient(to right, #4ca1af, #c4e0e5)';
 
-        // // create table row 
-        // const tr = document.createElement('tr');
-        // const td1 = document.createElement('th');
-        // const td2 = document.createElement('th');
-
-        // // set row value with number and name 
-        // td1.innerText = playerArray.length;
-        // td2.innerText = playerName;
-
-        // // append child 
-        // tr.appendChild(td1);
-        // tr.appendChild(td2);
 
         // condition for bonus mark 
         if (playerArray.length > 5) {
