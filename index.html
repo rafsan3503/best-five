@@ -12,12 +12,15 @@
   <!-- daisyui -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
 
+<!-- sweet alert  -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
-<body>
+<body style="background: linear-gradient(to right, #e0eafc, #cfdef3);">
 
     <!-- header hero section  -->
     <header>
-        <div class="hero min-h-screen w-11/12 mx-auto" style="background-image: url(images/hero-background.jpg);">
+        <div class="hero shadow-2xl rounded-xl overflow-hidden min-h-screen w-11/12 mx-auto" style="background-image: url(images/hero-background.jpg);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md">
@@ -30,20 +33,133 @@
     <!-- hero section ends -->
 
     <!-- main section starts  -->
-    <section class="mt-10 w-9/12 mx-auto">
-        <div class="grid grid-cols-2">
-            <div class="bg-base-100 shadow-xl">
-                <figure><img class="w-full h-80" src="images/player/CR7 WALLPAPERS.jfif" alt="Shoes" /></figure>
-                <div class="text-center">
-                    <h2 class="font-bold text-3xl text-center mt-4 mb-3">Ronaldo</h2>
-                    <p>Goal 34 . Assist 45</p>
-                    <div class="text-center w-9/12 mx-auto mt-5">
-                        <button class="btn btn-primary w-full">Select</button>
+    <section class="mt-10 w-11/12 mx-auto">
+        <section class="lg:flex gap-5">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div class="bg-blue-300 shadow-xl rounded-xl overflow-hidden">
+                    <figure><img class="w-full h-80 object-cover" src="images/player/CR7 WALLPAPERS.jfif" alt="Shoes" /></figure>
+                    <div class="text-center">
+                        <h2 class="font-bold text-3xl text-center mt-4 mb-3">Ronaldo</h2>
+                        <p>Goal 34 . Assist 45</p>
+                        <div class="text-center w-9/12 mx-auto mt-5 mb-5">
+                            <button class="btn btn-primary w-full">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-300 shadow-xl rounded-xl overflow-hidden">
+                    <figure><img class="w-full h-80 object-cover" src="images/player/Messi.jfif" alt="Shoes" /></figure>
+                    <div class="text-center">
+                        <h2 class="font-bold text-3xl text-center mt-4 mb-3">Lionel Messi</h2>
+                        <p>Goal 34 . Assist 45</p>
+                        <div class="text-center w-9/12 mx-auto mt-5 mb-5">
+                            <button class="btn btn-primary w-full">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-300 shadow-xl rounded-xl overflow-hidden">
+                    <figure><img class="w-full h-80 object-cover" src="images/player/neymar.jpg.jfif" alt="Shoes" /></figure>
+                    <div class="text-center">
+                        <h2 class="font-bold text-3xl text-center mt-4 mb-3">Neymar Jr.</h2>
+                        <p>Goal 34 . Assist 45</p>
+                        <div class="text-center w-9/12 mx-auto mt-5 mb-5">
+                            <button class="btn btn-primary w-full">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-300 shadow-xl rounded-xl overflow-hidden">
+                    <figure><img class="w-full h-80 object-cover" src="images/player/Karim Benzema Wallpaper - iXpap.jfif"
+                            alt="Shoes" /></figure>
+                    <div class="text-center">
+                        <h2 class="font-bold text-3xl text-center mt-4 mb-3">Karim Benzama</h2>
+                        <p>Goal 34 . Assist 45</p>
+                        <div class="text-center w-9/12 mx-auto mt-5 mb-5">
+                            <button class="btn btn-primary w-full">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-300 shadow-xl rounded-xl overflow-hidden">
+                    <figure><img class="w-full h-80 object-cover" src="images/player/mbappe psg wallpaper.jfif" alt="Shoes" />
+                    </figure>
+                    <div class="text-center">
+                        <h2 class="font-bold text-3xl text-center mt-4 mb-3">Kylan Mbappe</h2>
+                        <p>Goal 34 . Assist 45</p>
+                        <div class="text-center w-9/12 mx-auto mt-5 mb-5">
+                            <button class="btn btn-primary w-full">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-300 shadow-xl rounded-xl overflow-hidden">
+                    <figure><img class="w-full h-80 object-cover" src="images/player/football is my aesthetic.jfif" alt="Shoes" />
+                    </figure>
+                    <div class="text-center">
+                        <h2 class="font-bold text-3xl text-center mt-4 mb-3">Robert</h2>
+                        <p>Goal 34 . Assist 45</p>
+                        <div class="text-center w-9/12 mx-auto mt-5 mb-5">
+                            <button class="btn btn-primary w-full">Select</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div>
+                <div class="bg-indigo-300 shadow-xl p-5 min-h-80 w-full rounded-lg">
+                    <div class="text-center">
+                        <h2 class="font-bold text-3xl text-center mt-4 mb-3">Dream Five</h2>
+                        <!-- <ol  class="list-decimal text-2xl font-medium p-5">
+                            
+                        </ol> -->
+                        <div class="overflow-x-auto">
+                            <table class="table w-full">
+                                <!-- head -->
+                                <thead>
+                                    <tr>
+                                        <th>SL</th>
+                                        <th>Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="player-list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-lg mt-5 p-10 bg-black text-white rounded-xl">
+                    <h1 class="text-5xl text-indigo-500 font-bold text-center">Budget</h1>
+
+                    <!-- per Player  -->
+                    <p class="text-2xl my-3 text-amber-300">Per Player</p>
+                    <input id="per-player" type="number" class="text-black w-full border-0 outline-none p-2">
+
+                    <!-- calculate button  -->
+                    <button id="calculate" class="w-full bg-amber-600 mt-5 text-xl py-2">Calculate</button>
+
+
+                    <p class="mt-5 text-3xl font-medium text-indigo-400">Player Expenss: $<span id="player-expenss">00</span></p>
+
+                    <!-- manager  -->
+                    <p class="text-2xl my-3 text-amber-300">Manager</p>
+                    <input id="manager" class="text-black w-full border-0 outline-none p-2" type="number">
+
+                    <!-- coach  -->
+                    <p class="text-2xl my-3 text-amber-300">Coach</p>
+                    <input id="coach" class="text-black w-full border-0 outline-none p-2" type="number">
+
+                    <!-- calculate total button  -->
+                    <button id="calculate-total" class="w-full bg-amber-600 mt-5 py-2 text-xl">Calculate Total</button>
+
+                    <!-- total expenss  -->
+                    <p class="mt-5 flex text-3xl text-indigo-600 font-medium">Total: $<span id="expenss-total">00</span></p>
+                </div>
+                </div>
+                
+            </div>
+        </section>
     </section>
     <!-- main section ends  -->
+
+    <!-- js files  -->
+    <!-- utility js file  -->
+    <script src="utility.js"></script>
+    <!-- main js  -->
+    <script src="index.js"></script>
 </body>
 </html>
