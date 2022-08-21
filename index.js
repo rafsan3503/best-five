@@ -8,32 +8,40 @@ const playerArray = [];
 for (const button of buttons) {
     button.addEventListener('click', function (event) {
         const playerName = findPlayerName(event);
-        playerArray.push(playerName);
+        
+        playerArray.push(playerName)
         
         const orderList = document.getElementById('player-list');
 
-        // const li = document.createElement('li');
-        // li.innerText = playerName;
+        const li = document.createElement('li');
+        li.innerText = playerName;
+        li.setAttribute('class', 'mt-3');
+        li.style.background = 'linear-gradient(to right, #4ca1af, #c4e0e5)';
 
-        // create table row 
-        const tr = document.createElement('tr');
-        const td1 = document.createElement('th');
-        const td2 = document.createElement('th');
+        // // create table row 
+        // const tr = document.createElement('tr');
+        // const td1 = document.createElement('th');
+        // const td2 = document.createElement('th');
 
-        // set row value with number and name 
-        td1.innerText = playerArray.length;
-        td2.innerText = playerName;
+        // // set row value with number and name 
+        // td1.innerText = playerArray.length;
+        // td2.innerText = playerName;
 
-        // append child 
-        tr.appendChild(td1);
-        tr.appendChild(td2);
+        // // append child 
+        // tr.appendChild(td1);
+        // tr.appendChild(td2);
 
         // condition for bonus mark 
         if (playerArray.length > 5) {
-            alert('You cannot select more than 5 player')
+            Swal.fire({
+                icon: 'error',
+                title: 'Sorry...',
+                text: 'You cannot select more than 5 players!',
+            })
+            playerArray.pop();
         }
         else {
-            orderList.appendChild(tr);
+            orderList.appendChild(li);
             // button disable for bonus mark 
             event.target.setAttribute('disabled', 'true');
         }
