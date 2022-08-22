@@ -4,6 +4,7 @@ const buttons = document.getElementsByClassName('btn');
 // empty array for count player number 
 const playerArray = [];
 
+
 // set evetnt listener on every button 
 for (const button of buttons) {
     button.addEventListener('click', function (event) {
@@ -34,7 +35,10 @@ for (const button of buttons) {
             orderList.appendChild(li);
             // button disable for bonus mark 
             event.target.setAttribute('disabled', 'true');
+            
         }
+        
+        
     })
 }
 

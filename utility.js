@@ -11,6 +11,7 @@ function getInputValueById(inputId) {
     const input = document.getElementById(inputId);
     const inputString = input.value;
     const value = parseFloat(inputString);
+    input.value = '';
     return value;
 }
 
