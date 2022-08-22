@@ -53,6 +53,8 @@ document.getElementById('calculate').addEventListener('click', function () {
             title: 'Oops...',
             text: 'Please Provide a positive input!',
         })
+        setValueById("player-expenss", 0);
+
     }
     // conditon for NaN type 
     else if (isNaN(perPlayer) == true) {
@@ -61,6 +63,8 @@ document.getElementById('calculate').addEventListener('click', function () {
             title: 'Oops...',
             text: 'Please Provide a valid input!',
         })
+        setValueById("player-expenss", 0);
+
     }
     else {
         // set new value 
@@ -87,6 +91,8 @@ document.getElementById('calculate-total').addEventListener('click', function ()
             title: 'Oops...',
             text: 'Please Provide a positive input!',
         })
+        setValueById('expenss-total', 0);
+
     }
     // condition for NaN 
     else if (isNaN(manager) == true || isNaN(coach) == true) {
@@ -95,6 +101,8 @@ document.getElementById('calculate-total').addEventListener('click', function ()
             title: 'Oops...',
             text: 'Please Provide a valid input!',
         })
+        setValueById('expenss-total', 0);
+
     }
     else {
         // set value 
